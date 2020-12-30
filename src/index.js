@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, ScrollView, View, Platform } from 'react-native';
 import PropTypes from "prop-types";
-import LinearGradient from "react-native-linear-gradient"
+import {LinearGradient} from "expo-linear-gradient"
 const defaultFadeColors = ['rgba(229, 229, 229, 0.18)', 'rgba(206, 201, 201, 0.6)', 'rgba(206, 201, 201, 0.9)'];
 export default class RNFadedScrollView extends Component {
 
@@ -122,7 +122,7 @@ export default class RNFadedScrollView extends Component {
     render() {
         const endFadeEnable = this.isEndFadeAllowed();
         return (
-            <View style={[styles.container, this.props.containerStyle, { flexDirection: this.props.horizontal ? "row" : "column" }]}
+            <View style={this.props.containerStyle || [styles.container,  { flexDirection: this.props.horizontal ? "row" : "column" }]}
                 onLayout={this._onLayout.bind(this)}>
                 {(this.state.allowStartFade && this.props.allowDivider) && this.getDivider()}
                 <ScrollView

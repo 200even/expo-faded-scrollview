@@ -1,14 +1,14 @@
 {
-  "name": "rn-faded-scrollview",
-  "version": "1.0.10",
-  "description": "A simple and customizable React Native component that allows you to add fade effect in ScrollView at both ends.",
+  "name": "expo-faded-scrollview",
+  "version": "1.0.11",
+  "description": "A simple and customizable Expo component that allows you to add fade effect in ScrollView at both ends. Based on rn-faded-scrollview.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mak12/rn-faded-scrollview.git"
+    "url": "git+https://github.com/200even/rn-faded-scrollview.git"
   },
   "keywords": [
     "react-native",
@@ -18,19 +18,21 @@
     "fadedscrollview",
     "faded",
     "rn-faded-scrollview",
+    "expo-faded-scrollview",
     "fade",
     "effects"
   ],
-  "author": "Malik Abdul Kawee",
+  "authors": "Scott Ferguson",
+  "contributors": [
+    "Malik Abdul Kawee"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mak12/rn-faded-scrollview/issues"
+    "url": "https://github.com/200even/expo-faded-scrollview/issues"
   },
-  "homepage": "https://github.com/mak12/rn-faded-scrollview#readme",
+  "homepage": "https://github.com/200even/expo-faded-scrollview#readme",
   "peerDependencies": {
-    "react": "16.11.0",
-    "react-native": "0.62.2",
-    "react-native-linear-gradient": "^2.x.x"
+    "expo-linear-gradient": "~8.2.1"
   },
   "dependencies": {},
   "devDependencies": {
